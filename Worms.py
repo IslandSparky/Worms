@@ -352,7 +352,7 @@ class Worm(object):
     self.IQ += 1          # food eaten, makes the worm smarter
     
     if(food_rect.size[0] > self.size):     # this is the identifier for poison
-      self.IQ += random.randint(-20,-5)    # penalize for eating poison
+      self.IQ += random.randint(-10,-5)    # penalize for eating poison
       if self.IQ < 1:
         self.IQ = 1    # don't let him get too dumb
         
